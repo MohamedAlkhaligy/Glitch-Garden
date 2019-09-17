@@ -1,0 +1,11 @@
+﻿using UnityEngine;
+
+public class Gravestone : MonoBehaviour
+{
+    private void OnTriggerStay2D(Collider2D other) {
+        Attacker attacker = other.GetComponent<Attacker>();
+        if (attacker) {
+            // do some animation here
+        }
+    }
+}
